@@ -1,0 +1,174 @@
+        *
+        {
+            box-sizing: border-box;
+        }
+
+        body
+        {
+            background-color: #dedede;
+            font-family: 'Balsamiq Sans', sans-serif;
+        }
+
+        a
+        {
+            display: none;
+            text-decoration: none;
+            color: white;
+            padding-bottom: 4px;
+        }
+
+        .log
+        {
+            position: relative;
+        }
+
+        .toggle
+        {
+            position: absolute;
+            right: 8px;
+            top: 8px;
+            display: none;
+            
+        }
+
+          .floating-button 
+        {
+             
+            background-color: #9e9d9d;
+            color: black;
+            font-size: 25px;
+            padding: 8px 14px;
+            border: 3px solid black;
+            cursor: pointer;
+        }
+
+        
+        .menu-container
+        {
+            display: none;
+            cursor: pointer;
+            margin-left: -10px;
+            margin-right: -10px;
+        }
+       
+        .menu 
+
+        {
+            background-color: #dedede;
+            border-bottom: 2px solid black;
+            padding: 20px 0px 20px 0px;
+
+        }
+
+        h1
+        {
+            border-bottom: 3px solid black;
+            padding: 18px 0px 15px 28px;
+            background-color: #9e9d9d;
+            margin: -10px -10px 0px -10px;
+        }
+
+        h2
+        {
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .head
+        {
+            text-align: center;
+            font-size: 33px;
+            font-weight: bold;
+            margin: 45px 0px 65px 0px;
+            
+        }
+
+        .content
+        {
+            display: flex;
+            
+        }
+
+        .section1, .section2, .section3
+        {
+            
+            position: relative;
+            background-color: #9e9d9d;
+            height: auto;
+            padding: 0px 8px 0px 8px;
+            margin: 10px;            
+        }
+     
+        .title
+        {
+    
+            font-size: 22px;
+            padding-top: 10px;
+            font-weight: bold;
+            text-align: center;
+
+         }
+
+        p
+        {
+            margin-top: 8px;
+            word-spacing: 1px;
+        }
+
+
+        .floating-button:hover
+        {
+            background-color: #c4c4c4;
+        }
+
+        .menu:hover
+        {
+            background-color: #9e9d9d;;
+        }
+
+
+    @media (min-width: 768px) and (max-width: 991px) 
+    {
+        .content 
+        {
+            flex-wrap: wrap; /* Allow items to wrap to the next line */
+        }
+
+        .section1, .section2 
+        {
+            width: 50%;
+            flex: 1;
+        }
+
+        .section3 
+        {
+            width: 100%; /* Make section3 take up the full width */
+        }
+
+    }
+
+     @media (max-width: 767px)
+    {
+         .content
+         {
+                flex-direction: column;
+                align-items: center;
+         }
+
+        .section1, .section2, .section3
+        {
+                width: 100%;
+        }
+
+        .toggle
+        {
+
+            display: block;
+        }
+
+        a
+        {
+            display: block;
+        }
+    }
